@@ -6,7 +6,7 @@
                     <figure class="image is-square">
                         <img :src="src" :alt="alt">
                     </figure>
-                    <Button :text="button.text" :event="() => goTo(`/${name}`)" />
+                    <Button :text="button.text" :event="() => goTo(`/${name.toLowerCase()}`)" />
                 </div>
             </div>
         </div>
