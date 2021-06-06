@@ -4,5 +4,6 @@ export default  {
     alt: 'Robô de FLL',
     button: {
         text: 'Jogar FLL',
+        disabled: false,
     }
 }
