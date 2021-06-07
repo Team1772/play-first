@@ -1,5 +1,6 @@
 export default {
   number: 2,
+  notification: "Ops! Parece que o seu robô perdeu uma peça no meio do caminho :(",
   options: [
     {
       number: 1,

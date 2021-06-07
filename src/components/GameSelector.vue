@@ -4,9 +4,9 @@
             <div class="columns is-centered">
                 <div class="column is-half" v-for="{ src, alt, name, button } in games" :key="name">
                     <figure class="image is-square">
-                        <img :src="src" :alt="alt">
+                        <img v-lazy="src" :alt="alt">
                     </figure>
-                    <Button :text="button.text" :event="() => goTo(`/${name}`)" />
+                    <Button :disabled="button.disabled" :text="button.text" :event="() => goTo(`/${name.toLowerCase()}`)" />
                 </div>
             </div>
         </div>
@@ -38,10 +38,20 @@ export default {
 }
 </script>
 
-<style>
-.container#selector {
-    max-width: 700px !important;
-    margin-top: 5vh;
-}
+<style scoped>
+    .container#selector {
+        max-width: 700px !important;
+        margin-top: 10vh;
+    }
 
+    figure {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+    figure > img {
+        margin: auto;
+    }
 </style>

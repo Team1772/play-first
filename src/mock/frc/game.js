@@ -4,5 +4,6 @@ export default {
     alt: 'Robô de FRC',
     button: {
         text: 'Jogar FRC',
+        disabled: true,
     },
 }

@@ -3,15 +3,17 @@
     <div class="container" id="board">
       <div class="columns">
         <div class="column board-hud-container">
+          <!-- make a round component later -->
           <div class="round-container">
             <small class="label">Rodada</small>
             <span class="round">{{ this.round }}</span>
           </div>
           <figure class="board-image">
-            <img :src="src" alt="Tabuleiro" />
+            <img v-lazy="src" alt="Tabuleiro" />
           </figure>
         </div>
       </div>
+      <Notification :text="board.notification" v-if="board.notification" />
     </div>
     <div class="container">
       <div class="columns">
@@ -22,7 +24,7 @@
               <figure>
                 <img
                   class="img-option"
-                  :src="getOptionSrc(number)"
+                  v-lazy="getOptionSrc(number)"
                   :alt="`Opção ${number}`"
                 />
               </figure>
@@ -30,11 +32,7 @@
                 :fullWidth="false"
                 class="is-pulled-right"
                 text="Escolher"
-                :event="
-                  () => {
-                    setOption(button.solution.board);
-                  }
-                "
+                :event="() => { setOption(button.solution.board); }"
               />
             </div>
           </Card>
@@ -45,8 +43,9 @@
 </template>
 
 <script>
-import { Button } from "./";
-import Card from "./Card";
+import { Button } from './'
+import Card from './Card'
+import Notification from './Notification'
 export default {
   name: "Board",
 
@@ -57,13 +56,14 @@ export default {
   },
 
   components: {
+    Notification,
     Button,
     Card,
   },
 
   watch: {
     board(newBoard) {
-      this.src = require(`../assets/${this.game}/boards/${newBoard}/board.png`);
+      this.src = require(`../assets/${this.game}/boards/${newBoard.number}/board.png`);
 
       this.nextRound();
     },
@@ -71,18 +71,18 @@ export default {
 
   data() {
     return {
-      src: require(`../assets/${this.game}/boards/${this.board}/board.png`),
+      src: require(`../assets/${this.game}/boards/${this.board.number}/board.png`),
       round: 1,
     };
   },
 
   methods: {
     getOptionSrc(number) {
-      return require(`../assets/${this.game}/boards/${this.board}/options/${number}.jpeg`);
+        return require(`../assets/${this.game}/boards/${this.board.number}/options/${number}.jpeg`)
     },
 
     setOption(board) {
-      this.$emit("board", board);
+      this.$emit('board', board)
     },
 
     buttonToggle(button) {
@@ -93,7 +93,7 @@ export default {
     nextRound() {
       this.round++;
     },
-  },
+},
 };
 </script>
 
@@ -103,6 +103,11 @@ export default {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+img[lazy=loading] {
+  width: 50%!important;
+  height: 50% !important;
 }
 
 .img-option {
