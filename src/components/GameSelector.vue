@@ -4,7 +4,7 @@
             <div class="columns is-centered">
                 <div class="column is-half" v-for="{ src, alt, name, button } in games" :key="name">
                     <figure class="image is-square">
-                        <img :src="src" :alt="alt">
+                        <img v-lazy="src" :alt="alt">
                     </figure>
                     <Button :disabled="button.disabled" :text="button.text" :event="() => goTo(`/${name.toLowerCase()}`)" />
                 </div>

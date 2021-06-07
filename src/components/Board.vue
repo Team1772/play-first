@@ -4,7 +4,7 @@
             <div class="columns">
                 <div class="column">
                     <figure>
-                        <img :src="src" alt="Tabuleiro">
+                        <img v-lazy="src" alt="Tabuleiro">
                     </figure>
                 </div>
             </div>
@@ -16,7 +16,7 @@
                         <Button :text="button.text" :event="() => buttonToggle(button)" />
                         <div class="p-2 mb-5" v-if="button.solution.visible"> 
                             <figure>
-                                <img :src="getOptionSrc(number)" :alt="`Opção ${number}`">
+                                <img v-lazy="getOptionSrc(number)" :alt="`Opção ${number}`">
                             </figure>
                             <Button 
                                 :fullWidth="false" 
@@ -78,8 +78,19 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container#board {
     max-width: 700px !important;
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+}
+
+figure > img {
+    margin: auto;
 }
 </style>
