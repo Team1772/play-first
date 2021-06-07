@@ -5,7 +5,7 @@ export default {
     {
       number: 1,
       button: {
-        text: 'Andar 3 casas',
+        text: 'Volte 3 casas',
         solution: {
           visible: false,
           board: 1,
