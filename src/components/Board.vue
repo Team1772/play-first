@@ -8,6 +8,7 @@
                     </figure>
                 </div>
             </div>
+            <Notification :text="board.notification" v-if="board.notification" />
         </div>
         <div class="container">
             <div class="columns">
@@ -35,35 +36,37 @@
 <script>
 import { Button } from './'
 import Card from './Card'
+import Notification from './Notification'
 export default {
     name: 'Board',
 
     props: {
         game: String,
-        board: Number,
+        board: Object,
         options: Array,
     },
 
     components: {
+        Notification,
         Button,
         Card,
     },
 
     watch: {
         board(newBoard) {
-            this.src = require(`../assets/${this.game}/boards/${newBoard}/board.png`)
+            this.src = require(`../assets/${this.game}/boards/${newBoard.number}/board.png`)
         },
     },
 
     data() {
         return {
-            src: require(`../assets/${this.game}/boards/${this.board}/board.png`),
+            src: require(`../assets/${this.game}/boards/${this.board.number}/board.png`),
         }
     },
 
     methods: {
         getOptionSrc(number) {
-            return require(`../assets/${this.game}/boards/${this.board}/options/${number}.jpeg`)
+            return require(`../assets/${this.game}/boards/${this.board.number}/options/${number}.jpeg`)
         },
 
         setOption(board) {

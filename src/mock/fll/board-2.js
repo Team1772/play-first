@@ -1,5 +1,6 @@
 export default {
   number: 2,
+  notification: "Ops! Parece que o seu robô perdeu uma peça no meio do caminho :(",
   options: [
     {
       number: 1,
@@ -7,28 +8,8 @@ export default {
         text: 'Andar 3 casas',
         solution: {
           visible: false,
-          board: 4,
+          board: 1,
         }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Girar a direita e andar 3 casas',
-        solution: {
-          visible: false,
-          board: 3,
-        }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Virar a direita',
-        solution: {
-          visible: false,
-          board: 5,
-        },
       },
     },
   ]

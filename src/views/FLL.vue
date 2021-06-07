@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Board game="fll" :board="board.number" :options="options" @board="setBoard" />
+    <Board game="fll" :board="board" :options="options" @board="setBoard" />
   </div>
 </template>
 
