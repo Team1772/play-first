@@ -41,7 +41,7 @@ export default {
 <style>
 .container#selector {
     max-width: 700px !important;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 </style>
