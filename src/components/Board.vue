@@ -79,18 +79,23 @@ export default {
 </script>
 
 <style scoped>
-.container#board {
-    max-width: 700px !important;
-}
+    .container#board {
+        max-width: 700px !important;
+    }
 
-figure {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-}
+    figure {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+    }
 
-figure > img {
-    margin: auto;
-}
+    figure > img {
+        margin: auto;
+    }
+
+    img[lazy=loading] {
+      width: 50%!important;
+      height: 50% !important;
+    }
 </style>

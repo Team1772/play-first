@@ -38,10 +38,20 @@ export default {
 }
 </script>
 
-<style>
-.container#selector {
-    max-width: 700px !important;
-    margin-top: 10vh;
-}
+<style scoped>
+    .container#selector {
+        max-width: 700px !important;
+        margin-top: 10vh;
+    }
 
+    figure {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+    }
+
+    figure > img {
+        margin: auto;
+    }
 </style>
