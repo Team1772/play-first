@@ -6,7 +6,7 @@
                     <figure class="image is-square">
                         <img v-lazy="src" :alt="alt">
                     </figure>
-                    <Button :disabled="button.disabled" :text="button.text" :event="() => goTo(`/${name.toLowerCase()}`)" />
+                    <Button class="mt-4" :disabled="button.disabled" :text="button.text" :event="() => goTo(`/${name.toLowerCase()}`)" />
                 </div>
             </div>
         </div>
