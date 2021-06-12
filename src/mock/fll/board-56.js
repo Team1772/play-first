@@ -4,10 +4,20 @@ export default {
     {
       number: 1,
       button: {
-        text: 'Você ganhou kkkkkkkkkk',
+        text: 'Andar 1 casa',
         solution: {
           visible: false,
-          board: 56,
+          board: 57,
+        }
+      },
+    },
+    {
+      number: 2,
+      button: {
+        text: 'Andar 2 casas',
+        solution: {
+          visible: false,
+          board: 58,
         }
       },
     },

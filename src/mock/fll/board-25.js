@@ -11,25 +11,5 @@ export default {
         }
       },
     },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
-        solution: {
-          visible: false,
-          board: 27,
-        }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 28,
-        },
-      },
-    },
   ]
 }

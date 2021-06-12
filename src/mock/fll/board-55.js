@@ -17,7 +17,7 @@ export default {
         text: 'Andar 2 casas',
         solution: {
           visible: false,
-          board: 56,
+          board: 57,
         }
       },
     },
@@ -27,7 +27,7 @@ export default {
         text: 'Andar 3 casas',
         solution: {
           visible: false,
-          board: 56,
+          board: 58,
         },
       },
     },

@@ -1,34 +1,17 @@
 export default {
   number: 32,
+  notification: "Você encontrou a chave!",
+  isPowerUp: true,
+  isKey: true,
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
+        text: 'Pegar chave',
         solution: {
           visible: false,
           board: 33,
         }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
-        solution: {
-          visible: false,
-          board: 34,
-        }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 35,
-        },
       },
     },
   ]

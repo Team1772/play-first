@@ -1,34 +1,15 @@
 export default {
   number: 26,
+  notification: "Ah não! Há um portão bloqueando o caminho",
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
+        text: 'Virar à direita e andar 1 casa',
         solution: {
           visible: false,
           board: 27,
         }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
-        solution: {
-          visible: false,
-          board: 28,
-        }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 29,
-        },
       },
     },
   ]

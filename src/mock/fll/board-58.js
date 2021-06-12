@@ -1,16 +1,15 @@
 export default {
-  number: 39,
-  notification: "Você agora pode abrir esse portão",
+  number: 58,
+  notification: "Parabéns, você finalizou o percurso da 1772.",
   isPowerUp: true,
-  isKey: true,
   options: [
     {
       number: 1,
       button: {
-        text: 'Abrir portão com a chave',
+        text: 'REINICIAR W.I.P.',
         solution: {
           visible: false,
-          board: 40,
+          board: 1,
         }
       },
     },

@@ -1,5 +1,5 @@
 export default {
-  number: 31,
+  number: 57,
   options: [
     {
       number: 1,
@@ -7,7 +7,7 @@ export default {
         text: 'Andar 1 casa',
         solution: {
           visible: false,
-          board: 32,
+          board: 58,
         }
       },
     },

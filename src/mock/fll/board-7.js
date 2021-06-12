@@ -1,34 +1,17 @@
 export default {
   number: 7,
+  notification: "Ops! Parece que o seu robô perdeu uma peça no meio do caminho :(",
+  roundSkip: 2,
+
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
+        text: 'Voltar ao início para arrumar o robô',
         solution: {
           visible: false,
-          board: 8,
+          board: 1,
         }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
-        solution: {
-          visible: false,
-          board: 9,
-        }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 10,
-        },
       },
     },
   ]

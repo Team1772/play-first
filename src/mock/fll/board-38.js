@@ -21,15 +21,5 @@ export default {
         }
       },
     },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 41,
-        },
-      },
-    },
   ]
 }

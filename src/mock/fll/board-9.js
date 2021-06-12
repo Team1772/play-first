@@ -1,34 +1,17 @@
 export default {
   number: 9,
+  notification: "O contador de rounds estragou, rodada não contabilizada",
+  isPowerUp: true,
+  roundSkip: -1,
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
+        text: 'Ótimo!',
         solution: {
           visible: false,
           board: 10,
         }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
-        solution: {
-          visible: false,
-          board: 11,
-        }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 12,
-        },
       },
     },
   ]
