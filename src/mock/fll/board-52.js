@@ -1,34 +1,16 @@
 export default {
   number: 52,
+  notification: "O robô precisa de algumas manutenções, e ficou algumas rodadas sendo consertado",
+  roundSkip: 2,
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
+        text: 'Andar 1 casa para testar o conserto',
         solution: {
           visible: false,
           board: 53,
         }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
-        solution: {
-          visible: false,
-          board: 54,
-        }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 55,
-        },
       },
     },
   ]

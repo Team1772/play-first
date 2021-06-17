@@ -1,6 +1,6 @@
 <template>
   <!-- <div v:bindclass="notification is-danger is-light"> -->
-  <div v-bind:class="['notification', (isPowerUp) ? 'is-success-trailblazer' : 'is-danger is-light']">
+  <div v-bind:class="['notification', 'text-align', (isPowerUp) ? 'is-success-trailblazer' : 'is-danger is-light']">
     <button class="delete"></button>
     {{ text }}
   </div>
@@ -26,5 +26,9 @@ export default {
 .is-success-trailblazer {
   background: #0008361a;
   color: #000836;
+}
+
+.text-align {
+  text-align: center;
 }
 </style>

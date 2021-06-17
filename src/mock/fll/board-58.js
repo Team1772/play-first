@@ -6,7 +6,7 @@ export default {
     {
       number: 1,
       button: {
-        text: 'REINICIAR W.I.P.',
+        text: 'Reiniciar o jogo',
         solution: {
           visible: false,
           board: 1,

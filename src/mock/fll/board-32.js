@@ -2,7 +2,6 @@ export default {
   number: 32,
   notification: "Você encontrou a chave!",
   isPowerUp: true,
-  isKey: true,
   options: [
     {
       number: 1,

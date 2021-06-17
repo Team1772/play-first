@@ -1,34 +1,17 @@
 export default {
   number: 24,
+  notification: "Seu robô está rápido! Ele irá parar quando houver um obstáculo em sua frente",
+  isPowerUp: true,
+  roundSkip: -1,
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
-        solution: {
-          visible: false,
-          board: 25,
-        }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
+        text: 'Continuar andando até que haja um obstáculo em sua frente',
         solution: {
           visible: false,
           board: 26,
         }
-      },
-    },
-    {
-      number: 3,
-      button: {
-        text: 'Andar 3 casas',
-        solution: {
-          visible: false,
-          board: 27,
-        },
       },
     },
   ]

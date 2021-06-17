@@ -1,5 +1,7 @@
 export default {
   number: 18,
+  notification: "A bateria do robô estava fraca :( você teve que esperar algumas rodadas para recarregá-la novamente",
+  roundSkip: 3,
   options: [
     {
       number: 1,

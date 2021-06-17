@@ -4,20 +4,10 @@ export default {
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
+        text: 'Voltar 1 casa, virar para direita',
         solution: {
           visible: false,
           board: 39,
-        }
-      },
-    },
-    {
-      number: 2,
-      button: {
-        text: 'Andar 2 casas',
-        solution: {
-          visible: false,
-          board: 40,
         }
       },
     },

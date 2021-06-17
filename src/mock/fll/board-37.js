@@ -14,7 +14,7 @@ export default {
     {
       number: 2,
       button: {
-        text: 'Andar 2 casas',
+        text: 'Andar 2 casas, virar para direita',
         solution: {
           visible: false,
           board: 39,

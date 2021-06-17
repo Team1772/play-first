@@ -1,5 +1,7 @@
 export default {
   number: 53,
+  notification: "Já estamos vendo a linha de chegada!",
+  isPowerUp: true,
   options: [
     {
       number: 1,

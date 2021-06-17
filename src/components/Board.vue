@@ -15,7 +15,7 @@
       <div class="columns">
         <div class="column" v-for="{ number, button } in options" :key="number">
           <Card>
-            <Button :text="button.text" :event="() => buttonToggle(button)" :keyEvent="board.isKey"/>
+            <Button :text="button.text" :event="() => buttonToggle(button)"/>
             <div class="p-2 mb-5" v-if="button.solution.visible">
               <figure>
                 <img
@@ -89,7 +89,8 @@ export default {
     },
 
     nextRound(){
-      this.round += 1 + (this.board.roundSkip || 0);
+      if (this.board.number == 1) this.round = 1
+      else this.round += 1 + (this.board.roundSkip || 0);
     },
   },
 };

@@ -7,7 +7,7 @@ export default {
     {
       number: 1,
       button: {
-        text: 'Ótimo!',
+        text: 'Ótimo! Andar 1 casa',
         solution: {
           visible: false,
           board: 10,

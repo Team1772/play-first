@@ -1,6 +1,6 @@
 <template>
         <button 
-            :class="['button', isFullWidth, isLoading, isKeyEvent]"
+            :class="['button', isFullWidth, isLoading]"
             @click="event"
             v-html="text || hasIcon"
         />
@@ -17,10 +17,6 @@ export default {
         event: {
             type: Function,
             required: true,
-        },
-        keyEvent:{
-            type: Boolean,
-            default: false,
         },
         loading: {
             type: Boolean,
@@ -44,22 +40,9 @@ export default {
         hasIcon() {
             return this.icon ? `<i class="fas fa-${this.icon}"></i>` : ''
         },
-        isKeyEvent() {
-            return  this.keyEvent ? 'yellow-border' : ''
-        },
     },
 }
 </script>
 
 <style>
-    .yellow-border{
-        border: 3px solid rgb(228, 272, 74);
-    }
-
-    .yellow-border:hover{
-        background: rgb(228, 272, 74);
-        border: 3px solid rgb(228, 272, 74);
-        font-weight: 600;
-        color: #000000;
-    }
 </style>

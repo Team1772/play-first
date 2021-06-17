@@ -4,7 +4,7 @@ export default {
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa',
+        text: 'Voltar 1 casa',
         solution: {
           visible: false,
           board: 34,
@@ -14,7 +14,7 @@ export default {
     {
       number: 2,
       button: {
-        text: 'Andar 2 casas',
+        text: 'Voltar 2 casas',
         solution: {
           visible: false,
           board: 35,
@@ -24,7 +24,7 @@ export default {
     {
       number: 3,
       button: {
-        text: 'Andar 3 casas',
+        text: 'Voltar 3 casas',
         solution: {
           visible: false,
           board: 36,

@@ -2,7 +2,6 @@ export default {
   number: 39,
   notification: "Você agora pode abrir esse portão",
   isPowerUp: true,
-  isKey: true,
   options: [
     {
       number: 1,
