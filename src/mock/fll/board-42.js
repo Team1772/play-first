@@ -25,7 +25,7 @@ export default {
     {
       number: 3,
       button: {
-        text: 'Andar 2 casas, virar para direita, andar 1 casa',
+        text: 'Andar 3 casas e virar a esquerda',
         solution: {
           visible: false,
           board: 45,

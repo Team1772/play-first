@@ -1,5 +1,7 @@
 export default {
   number: 33,
+  notification: "Vamos andar para trás para chegar ao portão!",
+  isPowerUp: true,
   options: [
     {
       number: 1,

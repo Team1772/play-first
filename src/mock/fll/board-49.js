@@ -6,7 +6,7 @@ export default {
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa, virar para direita, andar 2 casas, virar para baixo, andar 1 casa',
+        text: 'Andar 1 casa, virar para direita, andar 2 casas, virar para direita, e andar 1 casa',
         solution: {
           visible: false,
           board: 53,

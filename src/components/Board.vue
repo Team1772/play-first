@@ -19,6 +19,7 @@
             <div class="p-2 mb-5" v-if="button.solution.visible">
               <figure>
                 <img
+                  v-bind:class="['solution-img', (board.isSolutionFullwidth) ? 'is-fullwidth' : 'is-300px-width']"
                   v-lazy="getOptionSrc(number)"
                   :alt="`Opção ${number}`"
                 />
@@ -61,9 +62,7 @@ export default {
 
   watch: {
     board(newBoard) {
-      this.src = require(`../assets/${this.game}/boards/${newBoard.number}/board.png`);
-
-      this.nextRound();
+      this.src = require(`../assets/${this.game}/boards/${newBoard.number}/board.png`); 
     },
   },
 
@@ -81,6 +80,8 @@ export default {
 
     setOption(board) {
       this.$emit("board", board);
+
+      this.nextRound();
     },
 
     buttonToggle(button) {
@@ -89,7 +90,7 @@ export default {
     },
 
     nextRound(){
-      if (this.board.number == 1) this.round = 1
+      if (this.board.isRestart) this.round = 1
       else this.round += 1 + (this.board.roundSkip || 0);
     },
   },
@@ -116,6 +117,10 @@ figure {
 
 figure > img {
   margin: auto;
+}
+
+.is-300px-width {
+  max-width: 300px;
 }
 
 img[lazy="loading"] {

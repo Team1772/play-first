@@ -1,15 +1,14 @@
 export default {
   number: 52,
-  notification: "O robô precisa de algumas manutenções, e ficou algumas rodadas sendo consertado",
-  roundSkip: 2,
+  notification: "Ops! Parece que o seu robô perdeu uma peça no meio do caminho :(",
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 1 casa para testar o conserto',
+        text: 'Ir procurá-la',
         solution: {
           visible: false,
-          board: 53,
+          board: 45,
         }
       },
     },

@@ -24,7 +24,7 @@ export default {
     {
       number: 3,
       button: {
-        text: 'Voltar 3 casas',
+        text: 'Voltar 3 casas e virar a direita',
         solution: {
           visible: false,
           board: 39,

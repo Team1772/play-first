@@ -6,10 +6,10 @@ export default {
     {
       number: 1,
       button: {
-        text: 'Andar 2 casas, virar para direita, andar 2 casas',
+        text: 'Andar 2 casas, virar para direita, e andar 5 casas',
         solution: {
           visible: false,
-          board: 20,
+          board: 23,
         },
       },
     },

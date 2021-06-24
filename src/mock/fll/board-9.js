@@ -1,16 +1,16 @@
 export default {
   number: 9,
-  notification: "O contador de rounds estragou, rodada não contabilizada",
+  notification: "As rodas do robô foram trocadas por outras mais velozes!",
   isPowerUp: true,
-  roundSkip: -1,
+  roundSkip: 1,
   options: [
     {
       number: 1,
       button: {
-        text: 'Ótimo! Andar 1 casa',
+        text: 'Ótimo! Andar 2 casas para testá-las',
         solution: {
           visible: false,
-          board: 10,
+          board: 11,
         }
       },
     },
