@@ -1,6 +1,6 @@
 <template>
         <button 
-            :class="['button', 'is-outlined', isFullWidth, isLoading]"
+            :class="['button', isFullWidth, isLoading]"
             @click="event"
             v-html="text || hasIcon"
         />

@@ -1,4 +1,4 @@
-import { Index, FLL } from '../views'
+import { Index, FLL, FRC } from '../views'
 
 export default {
     mode: 'history',
@@ -11,6 +11,10 @@ export default {
         {
             path: '/fll',
             component: FLL,
+        },
+        {
+            path: '/frc',
+            component: FRC,
         }
     ]
 }

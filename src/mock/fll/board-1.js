@@ -1,10 +1,12 @@
 export default {
   number: 1,
+  notification: "Bem vind@ ao tabuleiro :D Comece selecionando uma opção para andar",
+  isPowerUp: true,
   options: [
     {
       number: 1,
       button: {
-        text: 'Andar 3 casas',
+        text: 'Andar 1 casa',
         solution: {
           visible: false,
           board: 2,
@@ -14,7 +16,7 @@ export default {
     {
       number: 2,
       button: {
-        text: 'Andar -3 casas',
+        text: 'Andar 2 casas',
         solution: {
           visible: false,
           board: 3,
@@ -24,7 +26,7 @@ export default {
     {
       number: 3,
       button: {
-        text: 'Girar 90º',
+        text: 'Andar 3 casas e virar para direita',
         solution: {
           visible: false,
           board: 4,
