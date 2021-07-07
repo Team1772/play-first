@@ -1,6 +1,6 @@
 export default {
   number: 1,
-  notification: "Bem vind@ ao tabuleiro :D Comece selecionando uma opção para andar",
+  notification: "Bem vinde ao tabuleiro :D Comece selecionando uma opção para andar",
   isPowerUp: true,
   options: [
     {

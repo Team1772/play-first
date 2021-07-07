@@ -42,11 +42,10 @@ export default {
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .round-container .label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
-
   .round-container .round {
     margin-top: -10px;
     font-size: 2rem;
