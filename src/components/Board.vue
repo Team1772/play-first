@@ -149,7 +149,6 @@ figure > img {
     transition: 0.5s;
     margin-top: 40px;
     margin-bottom: 40px;
-    pointer-events: none;
   }  
 
   .solution-button{
