@@ -147,9 +147,9 @@ figure > img {
   .solution-img:hover {
     transform: scale(1.25);
     transition: 0.5s;
-    cursor: zoom-in;
     margin-top: 40px;
     margin-bottom: 40px;
+    pointer-events: none;
   }  
 
   .solution-button{
