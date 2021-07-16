@@ -1,5 +1,5 @@
 <template>
-  <div class="card mt-3">
+  <div class="card is-flex is-flex-direction-column align-center mt-3">
       <div class="card-content">
             <slot />
       </div>
@@ -11,3 +11,8 @@ export default {
     name: 'Card',
 }
 </script>
+<style scoped>
+ .align-center {
+   text-align: center;
+ }
+</style>
