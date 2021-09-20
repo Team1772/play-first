@@ -15,8 +15,9 @@
       <div class="columns">
         <div class="column" v-for="{ number, button } in options" :key="number">
           <Card>
+            <ChooseOption :number="number"/>
             <Button :text="button.text" :event="() => buttonToggle(button)"/>
-            <div class="p-2 mb-5" v-if="button.solution.visible">
+            <div class="p-2" v-if="button.solution.visible">
               <figure>
                 <img
                   v-bind:class="['solution-img', (board.isSolutionFullwidth) ? 'is-fullwidth' : 'is-300px-width']"
@@ -31,9 +32,7 @@
                   text="Escolher"
                   :event="() => { setOption(button.solution.board); }"
                 />
-                <div class="solution-option-container">
-                  <span>Opção {{number}}</span>
-                </div>            
+           
               </div>  
             </div>
           </Card>
@@ -48,6 +47,7 @@ import Button from "./Button";
 import Card from "./Card";
 import Notification from "./Notification";
 import Round from "./Round";
+import ChooseOption from "./ChooseOption.vue"
 
 export default {
   name: "Board",
@@ -63,6 +63,7 @@ export default {
     Button,
     Card,
     Round,
+    ChooseOption,
   },
 
   watch: {
@@ -103,6 +104,10 @@ export default {
 </script>
 
 <style scoped>
+.section{
+  padding-top: 0;
+}
+
 .container#board {
   max-width: 800px !important;
   pointer-events: none;
@@ -163,32 +168,14 @@ figure > img {
   align-items: center;
 }
 
-.solution-option-container {
-  display: flex;
-  background: #0008361a;
-  width: 30%;
-  justify-content: center;
-  margin: 30px auto -30px auto;
-}
-
-.solution-option-container > span{
-  color: #000836;
-  padding: 5px 2px;
-}
-
 @media (max-width: 600px) {
   .buttons-flex {
     flex-direction: row-reverse;
     justify-content: space-evenly;
   }
 
-  .solution-option-container {
-    margin: 0px 0px -50px 0px;
-  }
-
   .is-pulled-right {
     margin: 0px 0px -50px 0px;
-
   }
 }
 
@@ -210,6 +197,5 @@ img[lazy="loading"] {
   flex-direction: column;
   align-items: center;
 }
-
 
 </style>
