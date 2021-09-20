@@ -17,7 +17,7 @@
           <Card>
             <ChooseOption :number="number"/>
             <Button :text="button.text" :event="() => buttonToggle(button)"/>
-            <div class="p-2" v-if="button.solution.visible">
+            <div class="p-2 mb-5" v-if="button.solution.visible">
               <figure>
                 <img
                   v-bind:class="['solution-img', (board.isSolutionFullwidth) ? 'is-fullwidth' : 'is-300px-width']"
@@ -104,7 +104,7 @@ export default {
 </script>
 
 <style scoped>
-.section{
+.section {
   padding-top: 0;
 }
 
